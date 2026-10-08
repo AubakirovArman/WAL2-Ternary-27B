@@ -54,6 +54,6 @@ E022-Fixed128:69/136 на наборе разработки, AIME25 0/30; E020-B
 
 Имя: `vol2-e022-fixed128-pq2.gguf`.
 SHA256: `f403e7b38258769f7e915af9de7cef3a46fdef723e5d5764c0d224862eb26f23`.
-Локальный пакет подготовлен отдельно; публичного URL весов в этом снимке нет. `model/artifact.json` — машинный паспорт E022, `model/e020-b1024.json` — паспорт E020; `model/export-audit.json` — исходный отчёт экспорта. Его статус `exported_not_yet_validated` означает момент экспорта; последующая завершённая генерация 136 задач подтверждается в `evidence/diagnostic136/e022-fixed128.jsonl`.
+Оба кандидата опубликованы [на Hugging Face](https://huggingface.co/armanibadboy/WAL2-Ternary-27B); исходный код и протоколы — [на GitHub](https://github.com/AubakirovArman/WAL2-Ternary-27B). `model/artifact.json` — машинный паспорт E022, `model/e020-b1024.json` — паспорт E020; `model/export-audit.json` — исходный отчёт экспорта. Его статус `exported_not_yet_validated` означает момент экспорта; последующая завершённая генерация 136 задач подтверждается в `evidence/diagnostic136/e022-fixed128.jsonl`.
 
 Веса — собственные производные Qwen после преобразования и обучения, Apache-2.0 с атрибуцией Qwen. Метаданные/схема тензоров GGUF сверялись с совместимым Bonsai-шаблоном; тензоры его весов не переносились. Движок [PrismML-Eng/llama.cpp](https://github.com/PrismML-Eng/llama.cpp) используется по MIT, коммит `9a9394a895b96003ca842a6041cb28ac49a108f7`. Проект не связан организационно с PrismML или Qwen и не заявляет их одобрения.

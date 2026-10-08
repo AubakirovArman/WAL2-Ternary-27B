@@ -1,0 +1,28 @@
+{
+  "state": "published",
+  "repo_id": "armanibadboy/WAL2-Ternary-27B",
+  "url": "https://huggingface.co/armanibadboy/WAL2-Ternary-27B",
+  "revision": "9749d2c0924c1272e34ac32bf1546453cda41668",
+  "verified_public": true,
+  "verified_native_sha256": true,
+  "verified_file_inventory": true,
+  "completed_utc": "2026-10-08T03:43:38.549041+00:00",
+  "github": {
+    "state": "published",
+    "url": "https://github.com/AubakirovArman/WAL2-Ternary-27B",
+    "commit": "f7c3d8dce55fea48d08aea86b7911a603c97b804",
+    "files": 262
+  },
+  "native_artifacts": [
+    {
+      "filename": "vol2-e022-fixed128-pq2.gguf",
+      "bytes": 7253239808,
+      "sha256": "f403e7b38258769f7e915af9de7cef3a46fdef723e5d5764c0d224862eb26f23"
+    },
+    {
+      "filename": "vol2-e020-b1024-pq2.gguf",
+      "bytes": 7253239808,
+      "sha256": "d455cecef60237263ba68807e70e47629d72f4e075ba14cfbe4ac8a96939cf24"
+    }
+  ]
+}

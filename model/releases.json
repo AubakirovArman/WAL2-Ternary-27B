@@ -1,5 +1,8 @@
 {
-  "public_weight_urls": [],
+  "public_weight_urls": [
+    "https://huggingface.co/armanibadboy/WAL2-Ternary-27B/resolve/9749d2c0924c1272e34ac32bf1546453cda41668/vol2-e022-fixed128-pq2.gguf",
+    "https://huggingface.co/armanibadboy/WAL2-Ternary-27B/resolve/9749d2c0924c1272e34ac32bf1546453cda41668/vol2-e020-b1024-pq2.gguf"
+  ],
   "local_packages": [
     {
       "model": "Vol2 Ternary 27B E022-Fixed128",
@@ -17,5 +20,7 @@
       "diagnostic": "64/136",
       "aime25": "2/30"
     }
-  ]
+  ],
+  "huggingface_url": "https://huggingface.co/armanibadboy/WAL2-Ternary-27B",
+  "github_url": "https://github.com/AubakirovArman/WAL2-Ternary-27B"
 }

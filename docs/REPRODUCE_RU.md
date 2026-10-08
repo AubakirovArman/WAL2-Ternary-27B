@@ -76,7 +76,7 @@ python3 -m unittest discover -s tests -v
 
 ## Отдельный пакет весов и GitHub
 
-Скрипт `package_model.py` копирует model файл с reflink, где filesystem поддерживает его, без hardlink с рабочим экспериментом; проверяет checksum и добавляет model card/licences/паспорт. Пакет хранится в ignored releases. 7,25 ГБ нельзя помещать обычным blob в Git. Для публичных весов используйте model hub или другой large artifact hosting; адрес в artifact.json обновляется только после реальной загрузки.
+Скрипт `package_model.py` копирует model файл с reflink, где filesystem поддерживает его, без hardlink с рабочим экспериментом; проверяет checksum и добавляет model card/licences/паспорт. Пакет хранится в ignored releases. 7,25 ГБ нельзя помещать обычным blob в Git. Для публичных весов используйте model hub или другой large artifact hosting; Публичный адрес: [Hugging Face — WAL2](https://huggingface.co/armanibadboy/WAL2-Ternary-27B); оба native GGUF проверены по remote SHA256.
 
 ```bash
 python3 scripts/package_model.py /path/to/verified-model.gguf releases/e022-fixed128-pq2
@@ -102,3 +102,13 @@ python3 scripts/publish_huggingface.py --prepare-only
 ```
 
 По умолчанию8 upload workers. Объём представленных файлов около26,25ГБ до Xet-дедупликации. После загрузки проверяются публичный доступ, inventory и точные SHA256 обоих GGUF в зафиксированном remote commit. Изменённые URL добавляются только после успешной проверки.
+
+## Скачать опубликованный E022-Fixed128
+
+```bash
+hf download armanibadboy/WAL2-Ternary-27B vol2-e022-fixed128-pq2.gguf --local-dir models/hf
+python3 scripts/verify_model.py models/hf/vol2-e022-fixed128-pq2.gguf
+CUDA_VISIBLE_DEVICES=0 bash scripts/serve.sh models/hf/vol2-e022-fixed128-pq2.gguf
+```
+
+Для E020 скачайте `vol2-e020-b1024-pq2.gguf`; при проверке задайте `--manifest model/e020-b1024.json`. Base3 находится в `base3/e022-fixed128` и `base3/e020-b1024`; reference BF16 loader не является native PQ2 runtime.
