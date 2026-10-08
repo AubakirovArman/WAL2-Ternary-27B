@@ -1,0 +1,21 @@
+{
+  "public_weight_urls": [],
+  "local_packages": [
+    {
+      "model": "Vol2 Ternary 27B E022-Fixed128",
+      "manifest": "artifact.json",
+      "native_bytes": 7253239808,
+      "native_sha256": "f403e7b38258769f7e915af9de7cef3a46fdef723e5d5764c0d224862eb26f23",
+      "diagnostic": "69/136",
+      "aime25": "0/30"
+    },
+    {
+      "model": "Vol2 Ternary 27B E020-B-1024",
+      "manifest": "e020-b1024.json",
+      "native_bytes": 7253239808,
+      "native_sha256": "d455cecef60237263ba68807e70e47629d72f4e075ba14cfbe4ac8a96939cf24",
+      "diagnostic": "64/136",
+      "aime25": "2/30"
+    }
+  ]
+}

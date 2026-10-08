@@ -1,0 +1,30 @@
+{
+  "student": "WORKSPACE/reports/gsm8k-full-v1/e017",
+  "reference": "WORKSPACE/reports/gsm8k-full-v1/bonsai2",
+  "families": {
+    "gsm8k": {
+      "n": 1319,
+      "student_correct": 1117,
+      "reference_correct": 1275,
+      "student_accuracy": 0.8468536770280516,
+      "reference_accuracy": 0.9666413949962093,
+      "difference_percentage_points": -11.978771796815769,
+      "student_wilson95": [
+        0.8264136127759949,
+        0.8652792532880287
+      ],
+      "reference_wilson95": [
+        0.9555150939070569,
+        0.9750574942074928
+      ],
+      "student_only_correct": 17,
+      "reference_only_correct": 175,
+      "both_correct": 1100,
+      "both_wrong": 27,
+      "mcnemar_exact_p": 3.1281607788081394e-34,
+      "student_truncated": 25,
+      "reference_truncated": 6
+    }
+  },
+  "interpretation": "Descriptive paired comparison, not proof of equivalence. Wilson intervals are approximate 95% marginal intervals. A nonsignificant McNemar test does not establish parity."
+}

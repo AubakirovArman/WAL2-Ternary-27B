@@ -1,0 +1,33 @@
+{
+  "state": "completed",
+  "steps": 4096,
+  "best_step": 2560,
+  "reasoning_ce_before": 0.4370861463455485,
+  "reasoning_ce_best": 0.24966930359292228,
+  "reasoning_reduction_percent": 42.87869664129311,
+  "old_ce_before": 0.5324121238631074,
+  "old_ce_best": 0.5285415149433067,
+  "verified_ce_before": 0.46257591075333854,
+  "verified_ce_best": 0.4483109997428312,
+  "all_guard_checks_passed": true,
+  "retained": [
+    {
+      "step": 2560,
+      "score": 0.24966930359292228,
+      "path": "runs/e019-reasoning-recovery/candidates/step-2560"
+    },
+    {
+      "step": 4096,
+      "score": 0.25096247133926336,
+      "path": "runs/e019-reasoning-recovery/candidates/step-4096"
+    },
+    {
+      "step": 3584,
+      "score": 0.25162771638151527,
+      "path": "runs/e019-reasoning-recovery/candidates/step-3584"
+    }
+  ],
+  "packed_reload_exact_ce_match": true,
+  "training_mean_seconds": 2.2256083636621327,
+  "generation_evaluation": "completed: selected step2560 tested on matched68tasks; AIME0/30,freshsilver3/30,exactskills0/8"
+}

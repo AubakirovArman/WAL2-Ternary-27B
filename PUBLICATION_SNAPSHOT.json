@@ -1,0 +1,14 @@
+{
+  "snapshot_utc": "2026-10-08T03:37:45.340842+00:00",
+  "latest_completed_diagnostic": "e022-joint128",
+  "recommended_reference_checkpoint": "e020-b1024",
+  "last_complete_large_benchmark": "E017/Bonsai2 GSM8K1319",
+  "e022_state_at_capture": "Both training arms and all four136-task generation reviews completed",
+  "active_experiment_changed": false,
+  "original_scripts": 147,
+  "portable_scripts": 36,
+  "primary_release_checkpoint": "e022-fixed128",
+  "publication_name": "WAL2-Ternary-27B",
+  "historical_branch": "Vol2",
+  "previous_article_url": "https://astanahub.com/ru/blog/ot-54-gb-bf16-k-8-32-gb-kak-my-sozdali-otkrytuiu-ultra-low-bit-model-na-27-milliardov-parametrov"
+}

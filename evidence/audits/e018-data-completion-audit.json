@@ -1,0 +1,64 @@
+{
+  "state": "passed",
+  "checked_at_utc": "2026-09-26T03:13:24Z",
+  "splits": {
+    "train": {
+      "count": 25000,
+      "total_tokens": 33023220,
+      "supervised_tokens": 29325552,
+      "sha256": "616934a6ae942479814db2da8c639314a1b179247572dc2857fd42b355f0de32",
+      "mean_length": 1320.9288,
+      "median_length": 989,
+      "p95_length": 3332,
+      "max_length": 8455,
+      "over2048": 4560,
+      "over4096": 688,
+      "over8192": 8,
+      "categories": {
+        "math": 7500,
+        "grounded": 4000,
+        "code_synthetic": 5000,
+        "instructions": 5000,
+        "code_apps": 1000,
+        "logic": 2500
+      }
+    },
+    "validation": {
+      "count": 1500,
+      "total_tokens": 1929320,
+      "supervised_tokens": 1707964,
+      "sha256": "86dc2059ec17d6340ca6ef77cf89d6ecf36e11c9eb6a346e16d7d704d8090902",
+      "mean_length": 1286.2133333333334,
+      "median_length": 956,
+      "p95_length": 3433,
+      "max_length": 8263,
+      "over2048": 258,
+      "over4096": 40,
+      "over8192": 1,
+      "categories": {
+        "grounded": 240,
+        "math": 450,
+        "instructions": 300,
+        "code_synthetic": 300,
+        "logic": 150,
+        "code_apps": 60
+      }
+    }
+  },
+  "scope": "File hashes, counts, token totals, masks, quotas, IDs and exact prompt hashes. Does not re-execute all answer validators or prove semantic independence.",
+  "collection": {
+    "seconds_main_segment": 15130.933645194978,
+    "hours_main_segment": 4.203037123665272,
+    "completion_tokens_main_segment": 58913529,
+    "attempted": 36252,
+    "rejected": {
+      "verification_failed": 6886,
+      "repetition": 1189,
+      "unfinished": 1650,
+      "empty_reasoning_or_answer": 22,
+      "verification_exception": 4,
+      "encoding_or_length": 1
+    },
+    "completed_utc": "2026-09-25T22:55:37Z"
+  }
+}

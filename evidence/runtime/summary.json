@@ -1,0 +1,70 @@
+{
+  "state": "completed",
+  "native_ce": 0.4014526890260262,
+  "reference_ce": 0.40145963218295116,
+  "ce_delta": -6.943156924954508e-06,
+  "reference_tokens_per_second": 14.971063121900045,
+  "native_tokens_per_second": 111.62690722327346,
+  "speedup": 7.456177715260771,
+  "logit_checks": [
+    {
+      "id": 0,
+      "kl": 7.733643363916695e-05,
+      "top1_equal": true,
+      "max_abs": 0.21515607833999972
+    },
+    {
+      "id": 1,
+      "kl": 0.00036480004184130806,
+      "top1_equal": true,
+      "max_abs": 0.23696899413999994
+    },
+    {
+      "id": 2,
+      "kl": 0.0003030348891943266,
+      "top1_equal": true,
+      "max_abs": 0.09896850590000028
+    },
+    {
+      "id": 3,
+      "kl": 0.0015566473576472484,
+      "top1_equal": true,
+      "max_abs": 0.08529853821
+    },
+    {
+      "id": 4,
+      "kl": 2.0933028282947454e-05,
+      "top1_equal": true,
+      "max_abs": 0.19462335109999995
+    },
+    {
+      "id": 5,
+      "kl": 0.00013430150827686084,
+      "top1_equal": true,
+      "max_abs": 0.10713911056999992
+    },
+    {
+      "id": 6,
+      "kl": 2.1650825883644362e-05,
+      "top1_equal": true,
+      "max_abs": 0.11124992370999998
+    },
+    {
+      "id": 7,
+      "kl": 0.0006238770878315322,
+      "top1_equal": true,
+      "max_abs": 0.23523765802399998
+    }
+  ],
+  "native_tokens": 553,
+  "reference_tokens": 553,
+  "scope": "8 prompts, up to128 greedy tokens; speed includes prefill; full frozen CE120 and tokenizer identity; not full benchmark",
+  "exact_generation_matches": 7,
+  "generation_prompts": 8,
+  "observed_gpu6_memory_mib": 8503,
+  "gpu_memory_scope": "nvidia-smi snapshot during native generation; includes runtime/context, not measured peak",
+  "native_weight_types": {
+    "PQ2_0": 402,
+    "F32": 449
+  }
+}

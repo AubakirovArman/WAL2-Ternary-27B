@@ -1,0 +1,20 @@
+{
+  "time": 1790498452.0082963,
+  "weights_bytes": 7242233856,
+  "ternary_bytes": 7137280000,
+  "ternary_count": 402,
+  "f32_bytes": 104953856,
+  "f32_count": 449,
+  "observed_gpu_mib": {
+    "6": 62517,
+    "7": 62517
+  },
+  "kv_estimate_bytes": 53687091200,
+  "kv_estimate_basis": "16 attention blocks * K,V *4 KV heads *256 head_dim *2 bytes(F16) *32768 tokens *25 slots",
+  "evidence": [
+    "Actual mapped libggml-cuda.so from packaged llama-prism-b10709-9a9394a",
+    "CUDA allocator get_alloc_size uses quantized ggml_nbytes; init_tensor only initializes padding",
+    "PQ2 MMVQ reads block_pq2_0 directly; MMQ supports PQ2 on Hopper; no whole-model BF16 cache found"
+  ],
+  "limitations": "Source/header/memory audit; not a kernel-by-kernel profiler trace. Temporary kernel decoding and high-precision activations/accumulation remain normal."
+}

@@ -1,0 +1,101 @@
+{
+  "arm": "joint",
+  "step": 64,
+  "total": 128,
+  "samples": 4,
+  "positions": 9264,
+  "loss": 0.06864187959581614,
+  "seconds": 20.010301718953997,
+  "tokens_per_second": 462.9615350189862,
+  "peak_allocated_gib": [
+    124.62364912033081,
+    95.98156404495239
+  ],
+  "peak_reserved_gib": [
+    127.115234375,
+    98.11328125
+  ],
+  "gpu_indices": [
+    2,
+    6
+  ],
+  "memory_caps_gib": [
+    129.15399169921875,
+    127.60906982421875
+  ],
+  "examples": [
+    {
+      "id": "e020-train-math-15-420285",
+      "category": "math",
+      "loss": 0.0650254637002945,
+      "ce": 0.09770409017801285,
+      "kl": 0.05413256958127022,
+      "kl_prompt": 0.029335773908174954,
+      "kl_answer": 0.054549342366904695,
+      "kl_prompt_contribution": 0.0004848888249285117,
+      "kl_answer_contribution": 0.05364770034431123,
+      "prompt_positions": 52,
+      "answer_positions": 3094,
+      "positions": 3146
+    },
+    {
+      "id": "e020-train-math-07-420348",
+      "category": "math",
+      "loss": 0.08212174475193024,
+      "ce": 0.12576411664485931,
+      "kl": 0.06757429242134094,
+      "kl_prompt": 0.027046745678163925,
+      "kl_answer": 0.06848831501412898,
+      "kl_prompt_contribution": 0.0005965366296057795,
+      "kl_answer_contribution": 0.06697775292684274,
+      "prompt_positions": 53,
+      "answer_positions": 2350,
+      "positions": 2403
+    },
+    {
+      "id": "e020-logic-450478",
+      "category": "logic",
+      "loss": 0.07441484928131104,
+      "ce": 0.06927981972694397,
+      "kl": 0.07612651586532593,
+      "kl_prompt": 0.19062928750481403,
+      "kl_answer": 0.031943378241165825,
+      "kl_prompt_contribution": 0.053077174168007044,
+      "kl_answer_contribution": 0.023049339593625536,
+      "prompt_positions": 142,
+      "answer_positions": 368,
+      "positions": 510
+    },
+    {
+      "id": "e020-code_synthetic-430402",
+      "category": "code",
+      "loss": 0.053005460649728775,
+      "ce": 0.07197905331850052,
+      "kl": 0.04668091982603073,
+      "kl_prompt": 0.21391256924333243,
+      "kl_answer": 0.037080692403271664,
+      "kl_prompt_contribution": 0.011613350093085754,
+      "kl_answer_contribution": 0.035067575249396694,
+      "prompt_positions": 174,
+      "answer_positions": 3031,
+      "positions": 3205
+    }
+  ],
+  "validation": {
+    "ce": 0.1834795699459263,
+    "tokens": 64494,
+    "examples": 32,
+    "categories": {
+      "logic": 0.34428946033210284,
+      "math": 0.18543230507559472,
+      "code": 0.16842410854217826,
+      "instructions": 0.1518248257236835
+    }
+  },
+  "scale_stats": {
+    "parameters": 209920000,
+    "mean_abs_log_gain": 0.00042945636731640596,
+    "max_abs_log_gain": 0.0044165113940835,
+    "scales_changed_fraction": 0.0002372999237804878
+  }
+}

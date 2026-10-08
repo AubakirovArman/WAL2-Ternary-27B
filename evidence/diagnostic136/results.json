@@ -1,0 +1,303 @@
+[
+  {
+    "model": "e020-b1024",
+    "correct": 64,
+    "total": 136,
+    "truncated": 57,
+    "families": {
+      "aime25_diagnostic": {
+        "correct": 2,
+        "total": 30,
+        "truncated": 19
+      },
+      "e020_code_control": {
+        "correct": 15,
+        "total": 16,
+        "truncated": 1
+      },
+      "e020_instructions_control": {
+        "correct": 14,
+        "total": 16,
+        "truncated": 1
+      },
+      "e020_logic_control": {
+        "correct": 16,
+        "total": 16,
+        "truncated": 0
+      },
+      "e020_math_control": {
+        "correct": 10,
+        "total": 20,
+        "truncated": 9
+      },
+      "fresh_olympiad": {
+        "correct": 7,
+        "total": 30,
+        "truncated": 19
+      },
+      "verified_skill_transfer": {
+        "correct": 0,
+        "total": 8,
+        "truncated": 8
+      }
+    }
+  },
+  {
+    "model": "e021-opd16",
+    "correct": 61,
+    "total": 136,
+    "truncated": 58,
+    "families": {
+      "aime25_diagnostic": {
+        "correct": 2,
+        "total": 30,
+        "truncated": 22
+      },
+      "e020_code_control": {
+        "correct": 16,
+        "total": 16,
+        "truncated": 0
+      },
+      "e020_instructions_control": {
+        "correct": 15,
+        "total": 16,
+        "truncated": 0
+      },
+      "e020_logic_control": {
+        "correct": 16,
+        "total": 16,
+        "truncated": 0
+      },
+      "e020_math_control": {
+        "correct": 8,
+        "total": 20,
+        "truncated": 7
+      },
+      "fresh_olympiad": {
+        "correct": 4,
+        "total": 30,
+        "truncated": 21
+      },
+      "verified_skill_transfer": {
+        "correct": 0,
+        "total": 8,
+        "truncated": 8
+      }
+    }
+  },
+  {
+    "model": "e021-qad16",
+    "correct": 63,
+    "total": 136,
+    "truncated": 59,
+    "families": {
+      "aime25_diagnostic": {
+        "correct": 2,
+        "total": 30,
+        "truncated": 23
+      },
+      "e020_code_control": {
+        "correct": 15,
+        "total": 16,
+        "truncated": 1
+      },
+      "e020_instructions_control": {
+        "correct": 16,
+        "total": 16,
+        "truncated": 0
+      },
+      "e020_logic_control": {
+        "correct": 16,
+        "total": 16,
+        "truncated": 0
+      },
+      "e020_math_control": {
+        "correct": 8,
+        "total": 20,
+        "truncated": 10
+      },
+      "fresh_olympiad": {
+        "correct": 5,
+        "total": 30,
+        "truncated": 18
+      },
+      "verified_skill_transfer": {
+        "correct": 1,
+        "total": 8,
+        "truncated": 7
+      }
+    }
+  },
+  {
+    "model": "e022-fixed64",
+    "correct": 63,
+    "total": 136,
+    "truncated": 56,
+    "families": {
+      "aime25_diagnostic": {
+        "correct": 0,
+        "total": 30,
+        "truncated": 23
+      },
+      "e020_code_control": {
+        "correct": 13,
+        "total": 16,
+        "truncated": 3
+      },
+      "e020_instructions_control": {
+        "correct": 16,
+        "total": 16,
+        "truncated": 0
+      },
+      "e020_logic_control": {
+        "correct": 16,
+        "total": 16,
+        "truncated": 0
+      },
+      "e020_math_control": {
+        "correct": 11,
+        "total": 20,
+        "truncated": 5
+      },
+      "fresh_olympiad": {
+        "correct": 6,
+        "total": 30,
+        "truncated": 18
+      },
+      "verified_skill_transfer": {
+        "correct": 1,
+        "total": 8,
+        "truncated": 7
+      }
+    }
+  },
+  {
+    "model": "e022-fixed128",
+    "correct": 69,
+    "total": 136,
+    "truncated": 55,
+    "families": {
+      "aime25_diagnostic": {
+        "correct": 0,
+        "total": 30,
+        "truncated": 24
+      },
+      "e020_code_control": {
+        "correct": 15,
+        "total": 16,
+        "truncated": 1
+      },
+      "e020_instructions_control": {
+        "correct": 16,
+        "total": 16,
+        "truncated": 0
+      },
+      "e020_logic_control": {
+        "correct": 16,
+        "total": 16,
+        "truncated": 0
+      },
+      "e020_math_control": {
+        "correct": 14,
+        "total": 20,
+        "truncated": 5
+      },
+      "fresh_olympiad": {
+        "correct": 8,
+        "total": 30,
+        "truncated": 20
+      },
+      "verified_skill_transfer": {
+        "correct": 0,
+        "total": 8,
+        "truncated": 5
+      }
+    }
+  },
+  {
+    "model": "e022-joint64",
+    "correct": 67,
+    "total": 136,
+    "truncated": 55,
+    "families": {
+      "aime25_diagnostic": {
+        "correct": 1,
+        "total": 30,
+        "truncated": 24
+      },
+      "e020_code_control": {
+        "correct": 14,
+        "total": 16,
+        "truncated": 2
+      },
+      "e020_instructions_control": {
+        "correct": 15,
+        "total": 16,
+        "truncated": 1
+      },
+      "e020_logic_control": {
+        "correct": 16,
+        "total": 16,
+        "truncated": 0
+      },
+      "e020_math_control": {
+        "correct": 11,
+        "total": 20,
+        "truncated": 5
+      },
+      "fresh_olympiad": {
+        "correct": 8,
+        "total": 30,
+        "truncated": 17
+      },
+      "verified_skill_transfer": {
+        "correct": 2,
+        "total": 8,
+        "truncated": 6
+      }
+    }
+  },
+  {
+    "model": "e022-joint128",
+    "correct": 62,
+    "total": 136,
+    "truncated": 57,
+    "families": {
+      "aime25_diagnostic": {
+        "correct": 0,
+        "total": 30,
+        "truncated": 23
+      },
+      "e020_code_control": {
+        "correct": 14,
+        "total": 16,
+        "truncated": 2
+      },
+      "e020_instructions_control": {
+        "correct": 16,
+        "total": 16,
+        "truncated": 0
+      },
+      "e020_logic_control": {
+        "correct": 16,
+        "total": 16,
+        "truncated": 0
+      },
+      "e020_math_control": {
+        "correct": 8,
+        "total": 20,
+        "truncated": 7
+      },
+      "fresh_olympiad": {
+        "correct": 8,
+        "total": 30,
+        "truncated": 18
+      },
+      "verified_skill_transfer": {
+        "correct": 0,
+        "total": 8,
+        "truncated": 7
+      }
+    }
+  }
+]

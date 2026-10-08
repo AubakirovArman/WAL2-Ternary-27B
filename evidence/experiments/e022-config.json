@@ -1,0 +1,48 @@
+{
+  "experiment": "E022 fixed scales vs joint FP32 latent/learned group scales",
+  "created": 1791388558.5580308,
+  "gpu_indices": [
+    2,
+    6
+  ],
+  "gpu_uuids": [
+    "GPU_UUID_REDACTED",
+    "GPU_UUID_REDACTED"
+  ],
+  "parent_latent": "WORKSPACE/runs/e020-ab-b/candidates/step-1024",
+  "parent_gguf": "WORKSPACE/reports/e020-ab/B-1024/model.gguf",
+  "packed_template": "WORKSPACE/reports/e020-ab/B-1024/packed",
+  "train_sha256": "8419cea9c0c4d1962aaf90bca9e37874a8fb29faac077f2c8475b4c6b5d2cc58",
+  "validation_sha256": "090a32aa4181d507dcec9325b7ca92b4e0b076c7f69c088dde6706f5bff9dbc9",
+  "cache_manifest": "WORKSPACE/data/e020-kd-v1/manifest.json",
+  "cache_manifest_sha256": "c578a217cfcad0f69b80bbfb4d54039461b087f69a0f43ed3d6c132c54b5f743",
+  "tasks_file": "WORKSPACE/reports/e020-ab/tasks.json",
+  "tasks_sha256": "6038ee05180524525d847857892407d5fffa6a50d58b03b8945d284341babaf8",
+  "train_categories": {
+    "math": 384,
+    "code": 64,
+    "logic": 32,
+    "instructions": 32
+  },
+  "training_tokens": 1190527,
+  "max_sequence_tokens": 7662,
+  "validation_examples": 32,
+  "updates": 128,
+  "samples_per_update": 4,
+  "checkpoints": [
+    64,
+    128
+  ],
+  "weight_lr": 1e-06,
+  "scale_lr": 0.0001,
+  "max_abs_log_gain": 0.1,
+  "scale_gradient_normalization": "1/sqrt(128)",
+  "objective": ".25 answer CE + .75 top128+tail forward KL, all real next-token positions",
+  "forward": "Fully ternary H128/g128 with BF16 group scales; same parent identity weight STE in both arms",
+  "scale_backward": "LSQ-style q - (W/s)*I(abs(W/s)<1), chain through log gain; not exact ParetoQ SEQ",
+  "teacher": "Existing frozen aligned cache from original local FP8 source with BF16 reference computation; no API requests",
+  "safety_reserve_gib": 6,
+  "checkpoint_retention": "Two checkpoints per arm64/128; no edits/deletion of previous experiments",
+  "evaluation": "Same136 development tasks greedy temp0, thinking medium, output8192; both checkpoints per arm. No promotion by CE alone.",
+  "old_scale_pilot": "E007 trained only scales with fixed trits, LR.001/.003, and regressed; E022 jointly updates weights with LR1e-6 and gains1e-4."
+}

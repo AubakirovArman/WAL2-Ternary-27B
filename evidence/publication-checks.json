@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "markdown_local_links": true,
+  "python_syntax": true,
+  "source_manifest_scripts": 44,
+  "evidence_models": 7,
+  "source_weight_copies_have_distinct_inodes": true,
+  "gpu_work_started_for_publication": false,
+  "historical_weight_quality_retrained_for_publication": false
+}

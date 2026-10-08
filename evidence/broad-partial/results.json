@@ -1,0 +1,134 @@
+{
+  "state": "incomplete",
+  "planned_total": 9049,
+  "matched_tasks": 1569,
+  "models": {
+    "e017": {
+      "aime25": {
+        "correct": 0,
+        "total": 30,
+        "truncated": 19
+      },
+      "gsm8k": {
+        "correct": 238,
+        "total": 267,
+        "truncated": 2
+      },
+      "humaneval_plus": {
+        "correct": 90,
+        "total": 164,
+        "truncated": 19
+      },
+      "ifeval": {
+        "correct": 114,
+        "total": 194,
+        "truncated": 28
+      },
+      "math500": {
+        "correct": 123,
+        "total": 250,
+        "truncated": 49
+      },
+      "mbpp_plus": {
+        "correct": 86,
+        "total": 201,
+        "truncated": 15
+      },
+      "mmlu_redux": {
+        "correct": 167,
+        "total": 262,
+        "truncated": 7
+      },
+      "musr": {
+        "correct": 111,
+        "total": 201,
+        "truncated": 9
+      }
+    },
+    "bonsai2": {
+      "aime25": {
+        "correct": 17,
+        "total": 30,
+        "truncated": 10
+      },
+      "gsm8k": {
+        "correct": 262,
+        "total": 267,
+        "truncated": 0
+      },
+      "humaneval_plus": {
+        "correct": 150,
+        "total": 164,
+        "truncated": 3
+      },
+      "ifeval": {
+        "correct": 167,
+        "total": 194,
+        "truncated": 8
+      },
+      "math500": {
+        "correct": 240,
+        "total": 250,
+        "truncated": 8
+      },
+      "mbpp_plus": {
+        "correct": 129,
+        "total": 201,
+        "truncated": 1
+      },
+      "mmlu_redux": {
+        "correct": 237,
+        "total": 262,
+        "truncated": 0
+      },
+      "musr": {
+        "correct": 129,
+        "total": 201,
+        "truncated": 1
+      }
+    },
+    "e018": {
+      "aime25": {
+        "correct": 1,
+        "total": 30,
+        "truncated": 24
+      },
+      "gsm8k": {
+        "correct": 196,
+        "total": 267,
+        "truncated": 1
+      },
+      "humaneval_plus": {
+        "correct": 110,
+        "total": 164,
+        "truncated": 15
+      },
+      "ifeval": {
+        "correct": 115,
+        "total": 194,
+        "truncated": 33
+      },
+      "math500": {
+        "correct": 150,
+        "total": 250,
+        "truncated": 56
+      },
+      "mbpp_plus": {
+        "correct": 128,
+        "total": 201,
+        "truncated": 20
+      },
+      "mmlu_redux": {
+        "correct": 184,
+        "total": 262,
+        "truncated": 10
+      },
+      "musr": {
+        "correct": 119,
+        "total": 201,
+        "truncated": 5
+      }
+    }
+  },
+  "scope": "Only intersection of actual persisted per-task scores; interrupted, no full-suite claim"
+}

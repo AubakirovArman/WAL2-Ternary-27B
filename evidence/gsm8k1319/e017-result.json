@@ -1,0 +1,25 @@
+{
+  "state": "completed",
+  "e017": {
+    "correct": 1117,
+    "total": 1319,
+    "accuracy": 0.8468536770280516,
+    "wilson95": [
+      0.8264136127759949,
+      0.8652792532880287
+    ],
+    "truncated": 25
+  },
+  "e015": {
+    "correct": 1013,
+    "total": 1319,
+    "accuracy": 0.7680060652009097,
+    "wilson95": [
+      0.7444679666771344,
+      0.7899876139865428
+    ],
+    "truncated": 29
+  },
+  "additional_correct": 104,
+  "scope": "FLA continuation, full GSM8K; no automatic replacement of E015"
+}

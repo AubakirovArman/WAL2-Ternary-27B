@@ -1,0 +1,12 @@
+# Snapshot of the tested training environment, not required for CPU publication verification.
+torch==2.14.0
+transformers==5.17.0
+triton==3.8.0
+safetensors==0.8.0
+accelerate==1.15.0
+numpy==2.5.3
+httpx==0.28.1
+huggingface-hub==1.32.0
+flash-linear-attention==0.5.2
+fla-core==0.5.2
+einops==0.8.2

@@ -1,0 +1,12 @@
+{
+  "tasks": 136,
+  "old_math": 68,
+  "fresh_math": 20,
+  "code": 16,
+  "instructions": 16,
+  "logic": 16,
+  "tasks_sha256": "6038ee05180524525d847857892407d5fffa6a50d58b03b8945d284341babaf8",
+  "training_control_exclusion": true,
+  "decoding": "Same original E019-D greedy temp0,repeat1,thinking medium,8192 output tokens,ctx32768",
+  "official_scope": "Answer-only metrics; independent proof review separate; development controls, no withheld official test claim"
+}

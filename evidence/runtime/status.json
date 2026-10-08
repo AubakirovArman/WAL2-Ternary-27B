@@ -1,0 +1,14 @@
+{
+  "state": "stopped",
+  "updated": 1790504592.015953,
+  "concurrency": 50,
+  "completed": 1571,
+  "persisted": 1215,
+  "total": 9049,
+  "output_tokens": 2099145,
+  "aggregate_tokens_per_second": 567.9039281887577,
+  "elapsed_seconds": 3696.303011488053,
+  "eta_seconds": 21577.63772045875,
+  "reason": "Остановлено по запросу пользователя; GPU6 и GPU7 освобождены",
+  "previous_state": "benchmark"
+}

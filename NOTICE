@@ -1,0 +1,6 @@
+Vol2 Ternary 27B research code and documentation, 2026.
+Model derivative of Alibaba Cloud Qwen; source model Apache-2.0.
+Native inference uses PrismML-Eng/llama.cpp (MIT), derived from ggml-org/llama.cpp.
+GGUF metadata conversion follows Prism conversion/qwen.py. No Bonsai weight tensors are included in the released model.
+FLA, Transformers, PyTorch and other dependencies retain their upstream licenses.
+This project is independent of Qwen and PrismML and does not claim endorsement.

@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "device": "cpu",
+  "groups": [
+    1,
+    7,
+    17
+  ],
+  "checks": "Independent dense scale STE gradient, group normalization; CUDA: fused BF16 forward, identity weight STE, zero-gain parent equality",
+  "checkpoint_portable_effective_scales_and_resume_state": true
+}

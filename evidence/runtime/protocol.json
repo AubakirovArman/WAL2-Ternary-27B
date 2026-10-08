@@ -1,0 +1,26 @@
+{
+  "model": "e018-step25000",
+  "checkpoint": "WORKSPACE/reports/e018-final-aime10/e018-final.gguf",
+  "checkpoint_sha256": "5391b634ba744623320b89f134cf5a0c3afb76468d99556cfb50f089256e8e73",
+  "total": 9049,
+  "state": "running",
+  "decoding": "greedy",
+  "max_new_tokens": 8192,
+  "context_limit": 32768,
+  "reasoning_effort": "medium",
+  "tasks_sha256": "6e74d61558923e402408f14714af000d1c01c19bae95cb5a59e52b14ae32ca5c",
+  "attempts_per_task": 1,
+  "physical_gpus": [
+    6,
+    7
+  ],
+  "replicas": 2,
+  "slots_per_replica": 25,
+  "kv_cache": "f16",
+  "batch_size": 2048,
+  "ubatch_size": 512,
+  "prompt_mode": "Exact archived input token IDs; original HuggingFace prompts verified. No chat retemplating.",
+  "parallelism_note": "Continuous batching can change floating-point rounding and greedy trajectories relative to sequential native runs.",
+  "pilot": "Same100 stratified prompts, max512 output tokens, no pilot outputs scored; choose throughput only. Total in-flight concurrency across both replicas.",
+  "final_reload_ce_skipped": true
+}

@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "scope": "Release size, SHA256 and GGUF header layout",
+  "metadata": {
+    "general.architecture": "qwen35",
+    "prism.hadamard.block_size": 128,
+    "prism.hadamard.sign_mode": "identity"
+  },
+  "tensor_types": {
+    "142": 402,
+    "0": 449
+  },
+  "parameters_by_type": {
+    "142": 26869760000,
+    "0": 26238464
+  },
+  "tensor_count": 851,
+  "sha256": "f403e7b38258769f7e915af9de7cef3a46fdef723e5d5764c0d224862eb26f23",
+  "bytes": 7253239808
+}

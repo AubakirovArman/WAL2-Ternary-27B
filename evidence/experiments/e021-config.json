@@ -1,0 +1,83 @@
+{
+  "experiment": "E021 OPD vs paired ordinary QAD, bounded diagnostic",
+  "gpu_uuids": [
+    "GPU_UUID_REDACTED",
+    "GPU_UUID_REDACTED"
+  ],
+  "parent_latent": "WORKSPACE/runs/e020-ab-b/candidates/step-1024",
+  "parent_gguf": "WORKSPACE/reports/e020-ab/B-1024/model.gguf",
+  "packed_template": "WORKSPACE/reports/e020-ab/B-1024/packed",
+  "updates": 16,
+  "prompts_per_update": 8,
+  "completions_per_prompt": 4,
+  "rollout_slots": 8,
+  "max_new_tokens": 4096,
+  "context_per_slot": 8192,
+  "retained_updates": [
+    4,
+    8,
+    16
+  ],
+  "learning_rate": 1e-06,
+  "clip": 0.2,
+  "beta": 1.0,
+  "reward_weight": 1.0,
+  "sampler": {
+    "temperature": 1.0,
+    "top_k": 0,
+    "top_p": 1.0,
+    "repeat_penalty": 1.0,
+    "include_eos": true
+  },
+  "teacher": "Local frozen FP8-source dequantized to BF16 reference compute, exclusively GPU6/7; no live teacher API calls",
+  "training": "FP32 latent masters, BF16 ternary QAT compute, STE, all64layer activation checkpointing, head chunks64",
+  "opd_objective": "Mean clipped importance-ratio policy loss with detached (teacher_logp-behavior_logp)+group-standardized exact final reward. One update per freshly sampled group; no silent removal of truncated/incorrect rollouts.",
+  "control_objective": ".25 full-answer CE + .75 top128+tail teacher forward KL on the same prompts, four repeats each. Same16 optimizer updates, sample count and LR; generated tokens/wall time differ.",
+  "safety_reserve_gib": 4,
+  "questions_sha256": "cd6a5a2e8980c7ca58cc23f75e5a2205262f0c69af330593337f4d4ce4223aec",
+  "evaluation_tasks_sha256": "6038ee05180524525d847857892407d5fffa6a50d58b03b8945d284341babaf8",
+  "promotion": "No replacement of E018/E020. Final paired136question generation review vs parent; training rewards are not benchmark scores.",
+  "parity_gate": {
+    "mean_abs_logp_max": 0.15,
+    "p95_abs_logp_max": 0.75
+  },
+  "checkpoint_retention": "Only4,8,16 per arm plus atomic working snapshot; original checkpoints untouched",
+  "rollout_workers": 2,
+  "rollout_slots_per_gpu": 8,
+  "initial_policy_logp_parity": {
+    "mean_abs": 0.0035112640228661457,
+    "p95": 0.020700289340883585,
+    "max_abs": 0.13396090400129146,
+    "sequences": [
+      {
+        "id": 0,
+        "mean_abs": 0.004713769965775175,
+        "p95": 0.027384068907405443
+      },
+      {
+        "id": 1,
+        "mean_abs": 0.0029379749487341176,
+        "p95": 0.020098236306293576
+      },
+      {
+        "id": 2,
+        "mean_abs": 0.0032231355972349275,
+        "p95": 0.016350051247234834
+      },
+      {
+        "id": 3,
+        "mean_abs": 0.0031701755797203615,
+        "p95": 0.016274158579953308
+      }
+    ],
+    "passed": true
+  },
+  "training_placement": "layers0-31+embedding+lm_head GPU6; layers32-63+norm GPU7",
+  "memory_preflight_retry": {
+    "reason": "Accumulated full FP32 gradients plus lm_head FP32 temporary exceeded GPU7 allocator cap on second sample",
+    "optimizer_updates_before_retry": 0,
+    "retained_rollouts": 32,
+    "retained_teacher_scores": 32,
+    "fix": "Relocate vocabulary head, gradients and optimizer states to GPU6; keep4GiB reserve on both GPUs"
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "passed": true,
+  "cases": [
+    {
+      "topk": 1,
+      "scale": 0.01,
+      "loss": 0.017850777134299278,
+      "gradient_max_error": 2.473825588822365e-09
+    },
+    {
+      "topk": 1,
+      "scale": 1.0,
+      "loss": 0.31367096304893494,
+      "gradient_max_error": 1.862645149230957e-09
+    },
+    {
+      "topk": 1,
+      "scale": 8.0,
+      "loss": 2.3403074741363525,
+      "gradient_max_error": 7.450580596923828e-09
+    },
+    {
+      "topk": 5,
+      "scale": 0.01,
+      "loss": 0.10389648377895355,
+      "gradient_max_error": 4.540197551250458e-09
+    },
+    {
+      "topk": 5,
+      "scale": 1.0,
+      "loss": 0.5757588744163513,
+      "gradient_max_error": 2.3283064365386963e-09
+    },
+    {
+      "topk": 5,
+      "scale": 8.0,
+      "loss": 3.368000030517578,
+      "gradient_max_error": 7.450580596923828e-09
+    },
+    {
+      "topk": 23,
+      "scale": 0.01,
+      "loss": 0.4346463978290558,
+      "gradient_max_error": 3.725290298461914e-09
+    },
+    {
+      "topk": 23,
+      "scale": 1.0,
+      "loss": 0.9417511820793152,
+      "gradient_max_error": 3.725290298461914e-09
+    },
+    {
+      "topk": 23,
+      "scale": 8.0,
+      "loss": 3.1802256107330322,
+      "gradient_max_error": 7.450580596923828e-09
+    }
+  ],
+  "chunk_sizes": [
+    1,
+    4,
+    512
+  ],
+  "scope": "Coarse bucket value and full-vocabulary/backprop gradient vs independently summed dense complement; no division by bucket count; self KL and legacy consistency"
+}
